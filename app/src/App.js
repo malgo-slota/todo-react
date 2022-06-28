@@ -6,7 +6,7 @@ import Header from './components/Header';
 import TodoList from './components/TodoList';
 
 function App() {
-  //js code here: functions, variables, 
+  //js code here: functions, variables etc.
   const subtitle = "learning props";
 
   return (

@@ -1,0 +1,19 @@
+{
+    "Items" : [
+        {
+            "id": "1",
+            "name": "Swimming lesson",
+            "complete": false
+        },
+        {
+            "id": "2",
+            "name": "Water plants",
+            "complete": false
+        },
+        {
+            "id": "3",
+            "name": "Meal prep",
+            "complete": false
+        }
+    ]
+}
