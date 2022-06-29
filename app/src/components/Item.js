@@ -1,19 +1,12 @@
 import React, {useState} from "react";
+import Checkbox from "./Checkbox";
 
 function Item ({ item }) {
     const[toggle, setToggle] = useState(item.complete);
 
-    const isChecked = () => {
-        setToggle(prev => !prev);
-    }
-
     return (
         <li className="list-group-item">
-             <input type="checkbox" 
-                    name="chck"
-                    onClick={isChecked}
-                    className={`form-check-input me-1 ${toggle ? 'active' : ""}`}>
-             </input>
+             <Checkbox toggle={toggle} setToggle={setToggle}/>
             <label htmlFor="chck">
                 {item.name}
             </label>           
