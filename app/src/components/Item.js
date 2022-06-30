@@ -1,14 +1,15 @@
 import React, {useState} from "react";
+//components
 import Checkbox from "./Checkbox";
 
-function Item ({ item }) {
-    const[toggle, setToggle] = useState(item.complete);
+function Item ({ text, isDone }) {
+    const[toggle, setToggle] = useState(isDone);
 
     return (
         <li className="list-group-item">
              <Checkbox toggle={toggle} setToggle={setToggle}/>
             <label htmlFor="chck">
-                {item.name}
+                {text}
             </label>           
         </li>
     );

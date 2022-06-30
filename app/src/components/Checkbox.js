@@ -1,15 +1,15 @@
 import React from "react";
 
-const Checkbox = (props) => {
+const Checkbox = ({ toggle, setToggle }) => {
      const isChecked = () => {
-        props.setToggle(prev => !prev);
-    }
+        setToggle(prev => !prev);
+    };
 
     return (
         <input type="checkbox" 
                     name="chck"
                     onClick={isChecked}
-                    className={`form-check-input me-1 ${props.toggle ? 'active' : ""}`}>
+                    className={`form-check-input me-1 ${toggle ? 'active' : ""}`}>
         </input>
     );
 }

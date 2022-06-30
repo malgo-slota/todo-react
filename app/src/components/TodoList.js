@@ -1,13 +1,12 @@
 import React from "react";
-import todo from "./mockData.json";
 //components
 import Item from "./Item";
 
-function TodoList () {
+function TodoList ({ todos }) {
     return (
         <ul className="list-group">
-            {todo.Items.map(item => 
-                <Item key={item.id} item={item} />
+            {todos.map(item => 
+                <Item key={item.id} text={item.name} isDone={item.completed} />
             )}
         </ul>
     );

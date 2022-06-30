@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 //components
@@ -7,14 +7,15 @@ import Form from './components/Form';
 import TodoList from './components/TodoList';
 
 function App() {
-  //js code here: functions, variables etc.
   const subtitle = "Create your To-Do List";
+  const [inputTxt, setInputTxt] = useState("");
+  const [todos, setTodos] = useState([]);
 
   return (
     <div>
       <Header text={subtitle} />
-      <Form />
-      <TodoList />
+      <Form inputTxt={inputTxt} setInputTxt={setInputTxt} todos={todos} setTodos={setTodos} />
+      <TodoList todos={todos} />
     </div>
   );
 }
