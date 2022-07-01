@@ -7,9 +7,9 @@ const Checkbox = ({ toggle, setToggle }) => {
 
     return (
         <input type="checkbox" 
-                    name="chck"
+                    id="chck"
                     onClick={isChecked}
-                    className={`form-check-input me-1 ${toggle ? 'active' : ""}`}>
+                    className={`form-check-input mt-0 ${toggle ? 'active' : ""}`}>
         </input>
     );
 }

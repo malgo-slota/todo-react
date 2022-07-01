@@ -13,3 +13,14 @@
 .active {
   opacity: 0.6;
 }
+
+.item-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__trash {
+  border: none;
+  background: none;
+}
+
