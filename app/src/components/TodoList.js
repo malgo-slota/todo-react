@@ -8,7 +8,6 @@ function TodoList ({ todos, setTodos }) {
             {todos.map(item => 
                 <Item key={item.id} 
                     text={item.name} 
-                    isDone={item.completed} 
                     todos={todos}
                     todo={item} 
                     setTodos={setTodos}  />

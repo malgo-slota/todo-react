@@ -1,15 +1,23 @@
 import React from "react";
 
-const Checkbox = ({ toggle, setToggle }) => {
-     const isChecked = () => {
-        setToggle(prev => !prev);
+const Checkbox = ({ todo, todos, setTodos }) => {
+     
+    const completeHandler = () => {
+        setTodos(todos.map((item) => {
+            if(item.id === todo.id) {
+                return {
+                    ...item, completed: !item.completed
+                }
+            }
+            return item;
+        }));
     };
 
     return (
         <input type="checkbox" 
                     id="chck"
-                    onClick={isChecked}
-                    className={`form-check-input mt-0 ${toggle ? 'active' : ""}`}>
+                    onClick={completeHandler}
+                    className={`form-check-input mt-0 ${todo.completed ? 'active' : ""}`}>
         </input>
     );
 }

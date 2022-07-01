@@ -1,14 +1,15 @@
-import React, {useState} from "react";
+import React from "react";
 //components
 import Checkbox from "./Checkbox";
 import Delete from "./Delete";
 
-function Item ({ text, todo, isDone, todos, setTodos }) {
-    const[toggle, setToggle] = useState(isDone);
+function Item ({ text, todo, todos, setTodos }) {
 
     return (
         <li className="list-group-item item-flex">
-             <Checkbox toggle={toggle} setToggle={setToggle}/>
+             <Checkbox todo={todo} 
+                        todos={todos}
+                        setTodos={setTodos}/>
             <label className="form-check-label"
                     htmlFor="chck">
                 {text}
