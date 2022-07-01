@@ -1,13 +1,10 @@
 import React, {useState} from "react";
 //components
 import Checkbox from "./Checkbox";
+import Delete from "./Delete";
 
 function Item ({ text, todo, isDone, todos, setTodos }) {
     const[toggle, setToggle] = useState(isDone);
-
-    const deleteHandler = () => {
-        setTodos(todos.filter((el) => el.id !== todo.id));
-    };
 
     return (
         <li className="list-group-item item-flex">
@@ -16,12 +13,9 @@ function Item ({ text, todo, isDone, todos, setTodos }) {
                     htmlFor="chck">
                 {text}
             </label> 
-            <button className="btn__trash"
-                    onClick={deleteHandler}>
-                <span className="material-icons-outlined md-24">
-                    delete
-                </span>
-            </button>          
+            <Delete todo={todo} 
+                    todos={todos} 
+                    setTodos={setTodos} />       
         </li>
     );
 }
