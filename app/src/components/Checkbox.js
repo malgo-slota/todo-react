@@ -17,7 +17,7 @@ const Checkbox = ({ todo, todos, setTodos }) => {
         <input type="checkbox" 
                     id="chck"
                     onClick={completeHandler}
-                    className={`form-check-input mt-0 ${todo.completed ? 'active' : ""}`}>
+                    className="form-check-input mt-0">
         </input>
     );
 }

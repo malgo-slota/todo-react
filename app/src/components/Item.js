@@ -10,7 +10,7 @@ function Item ({ text, todo, todos, setTodos }) {
              <Checkbox todo={todo} 
                         todos={todos}
                         setTodos={setTodos}/>
-            <label className="form-check-label"
+            <label className={`form-check-label ${todo.completed ? 'complete' : ""}`}
                     htmlFor="chck">
                 {text}
             </label> 
