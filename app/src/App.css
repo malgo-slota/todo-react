@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .title {
   text-align: center;
   margin: 1em 0;
@@ -51,9 +56,10 @@
 }
 
 footer {
-  position:absolute;
-  bottom:0;
-  width:100%;
+  position: absolute;
+  left: 0;
+  bottom: 0; 
   height: 40px;
+  width: 100%;
   text-align: center;
 }
