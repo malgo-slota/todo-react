@@ -11,6 +11,7 @@ This app let user to:
 - filter by all/active/completed state,
 
 also this app stores data in local storage, so after refreshing the page, no data is loss
+App is fully responsive and has minimalistic UI
 
 ### Build with
 
@@ -31,8 +32,7 @@ I'm impressed by how React makes code more readable, apps more efficient, and I 
 ### Continued development
 
 - drag and drop
-- better UI
-- accessibility 
+- accessibility improvements
 
 ## Author
 
