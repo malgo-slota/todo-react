@@ -8,7 +8,7 @@ function Delete ({ todo, todos, setTodos}) {
     return (
         <button className="btn__trash"
                     onClick={deleteHandler}>
-                <span className="material-icons-outlined md-24">
+                <span className="material-icons-outlined md-light">
                     delete
                 </span>
             </button>

@@ -8,7 +8,7 @@ import TodoList from './components/TodoList';
 import Filter from './components/Filter'
 
 function App() {
-  const subtitle = "Create your To-Do List";
+  const subtitle = "minimalistic To-Do List";
   const [inputTxt, setInputTxt] = useState("");
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('all');
@@ -56,8 +56,8 @@ function App() {
     <div>
       <Header text={subtitle} />
       <Form inputTxt={inputTxt} setInputTxt={setInputTxt} todos={todos} setTodos={setTodos} />
-      <TodoList todos={todos} setTodos={setTodos} filtered={filtered}/>
       <Filter todos={todos} status={status} setStatus={setStatus} filtered={filtered} setFiltered={setFiltered} />
+      <TodoList todos={todos} setTodos={setTodos} filtered={filtered}/>
     </div>
   );
 }

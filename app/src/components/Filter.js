@@ -7,16 +7,16 @@ function Filter ({ setStatus }) {
     };  
 
     return (
-        <div className="btn-group"
+        <div className="btn-group status-btns"
              onClick={statusHandler}>
             <button type="button" 
-                    className="btn btn-outline-primary"
+                    className="btn"
                     value="all">All</button>
             <button type="button" 
-                    className="btn btn-outline-primary"
+                    className="btn"
                     value="active">Active</button>
             <button type="button" 
-                    className="btn btn-outline-primary"
+                    className="btn"
                     value="completed">Completed</button>
         </div>
     );

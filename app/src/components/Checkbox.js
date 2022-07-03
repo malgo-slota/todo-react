@@ -14,11 +14,13 @@ const Checkbox = ({ todo, todos, setTodos }) => {
     };
 
     return (
-        <input type="checkbox" 
-                    id="chck"
-                    onClick={completeHandler}
-                    className="form-check-input mt-0">
-        </input>
+        <button id="chck"
+                onClick={completeHandler}
+                className={`complete-btn ${todo.completed ? 'complete-btn--checked' : ''}`}>
+            <span className="material-icons-outlined material-icons-outlined--light">
+                done
+            </span>
+        </button>
     );
 }
 
