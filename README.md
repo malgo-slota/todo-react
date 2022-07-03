@@ -19,6 +19,10 @@ also this app stores data in local storage, so after refreshing the page, no dat
 - Bootstrap
 - React.js
 
+### Screenshot
+
+![screenshot](screenshots/screenshot-todo.png?raw=true)
+
 ### What I've learned
 
 The main purpose of the app was to train React.js concepts and it is fulfilled. Now I am confident with my knowledge about using props and state, what is lifting up state, hooks (useEffect and useState) I get better understanding in React app structure. I've learned how to store data in local storage.
